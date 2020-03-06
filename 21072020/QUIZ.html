@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>SW Studio Today</h1>
+        </header>
+        <div>
+            <img src="./me.jpg" alt="Picture of me" style="border-radius: 150px;width:100px;height: 100px;">
+            <p>
+                Reported by<br>
+                Mr. Karin Onwong<br>
+                (Oat)<br>
+                ID 60010018<br>
+                <br>
+                Feb 21, 2020
+            </p>
+            <h2>HTML Exam</h2>
+            <details>
+                <summary>Proposes</summary>
+                <ul>
+                    <li>Understand the nature of tags language</li>
+                    <li>Know the standard HTML structure</li>
+                    <li>Create a simple html document with a standard structure</li>
+                    <li>Know HTML FORM</li>
+                </ul>
+              </details>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Use the text editor to create the HTML document shown on the screen.</li>
+                <li>The created HTML document must comply with the following conditions.
+                    <ul>
+                        <li type="index">Good structure</li>
+                        <li type="index">The fields with the * of the form must be checked to ensure that it is not empty</li>
+                        <li type="index">The textboxes must display an example of the input in the textbox.</li>
+                        <li type="index">Some textboxes required to check the input pattern before submitting</li>
+                        <li type="index">The pattern must match what the lecturer has given.</li>                   
+                    </ul>
+                </li>
+            </ol>
+            
+            <form>
+                <p>Registration Form</p>
+            <fieldset>
+                <legend>Personal Informations</legend>
+                Name:*<input type="text" required>
+                Surname:*<input type="text" required><br>
+                Birthday: <input type="date">
+                Age: <input type="number"><br>
+                Gengers:* 
+                <select name="age" required>
+                    <option value disabled selected hidden required>Choose</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br>
+                Have you got a sibling?* 
+                <input type="radio" name = "sib" Value="yes" required> Yes
+                <input type="radio" name = "sib" Value="no" required> No
+               </fieldset>
+
+               <fieldset>
+                <legend>Address</legend>
+                Address1:*<input type="text" required><br>
+                Road:*<input type="text" required><br>
+                District*: <input type="text" required><br>
+                Province:*<input type="text" required><br>
+                Country:<input type="text"><br>
+                Postal Code:*<input type="tel" pattern="[0-9]{5}" placeholder="XXXXX" size="5">
+               </fieldset>
+               <fieldset>
+                <legend>Topics of interest</legend>
+                <ul>
+                    <li><input type="checkbox">Gaming</li>
+                    <li><input type="checkbox">Reading</li>
+                    <li><input type="checkbox">Travelling</li>
+                    <li><input type="checkbox">Hiking</li>
+                    <li><input type="checkbox">Sports</li>
+                    <li><input type="checkbox">Sleeping</li>
+                    <li><input type="checkbox">Other<input type="text" placeholder="Please specify"></li>
+                </ul>
+               </fieldset>
+               <input type="submit" value="Submit">
+            </form>
+
+
+        </div>
+        <br>
+        <footer>ce kimtl all right reserved & copyright 2020</footer>
+    </body>
+</html>
+
+
+<!--picture 100*100-->
+<!--gender drop down list -> show choose but disable and hidden 1Male 2Female req-->

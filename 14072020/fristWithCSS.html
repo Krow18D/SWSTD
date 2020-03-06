@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <title>SW Studio #2</title>
+    <style>
+        body{
+            width: 750px;
+        }
+
+        header {
+            text-align: center;
+        }
+        header > h1,footer{
+            background-color: gold;
+            color: blue;
+        }
+        header > h2{
+            color: plum;
+        }
+        img{
+            float: right;
+        }
+        a{
+            overflow: auto;
+            display: block;
+        }
+        .info{
+            
+            color: steelblue;
+        }
+        .date{
+            
+            font-style: italic;
+            color: deeppink;
+        }
+        .sec:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .intro{
+            width: 50%;
+            float: left;
+            overflow: auto;
+        }
+        .expect{
+            width: 50%;
+            float: right;
+            overflow: auto;
+        }
+        .quote{
+            float:right;
+            
+            margin-left: 10px;
+            font-style: italic;
+            font-size: 150%;
+            border-top: 2px black solid;
+            border-bottom: 2px black solid;
+            border-spacing: 15%;
+            
+        }
+        .progressbar:after{
+            content: "";
+            float: left;
+            
+        }
+        .register{
+            float: left;
+            width: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>SW Studio Today</h1>
+            <h2>The record of the CSS class</h2>
+            
+        </header>
+        <a>
+            <img src="me2.jpg" alt="It's picture of me" width="200px" height="auto">
+            <p class = "info">Reported by <br> Mr. Karin Onwong<br>Oat<br>ID 60010018<br></p>
+            <p class = "date">Feb 14, 2020 </p>
+        </a>
+        <section class="sec">
+            <div class = "intro">
+                <h3>Introduction</h3>
+                <p>describe your background about CSS e.g.</p>
+                <ul>
+                    <li>do you know CSS? : Not expert</li>
+                    <li>Have you ever been using CSS? : Just in tutorial</li>
+                    <li>Have you ever worked with CSS before? : I use instant CSS like bootstrap</li>
+                    <li>Have you any idea how CSS works? : It's can define any decoration of html and select some part to use it.</li>
+                    <li>What are you expecting from CSS? : I can do it better</li>
+                    <li>etc. : Nope</li>
+                </ul>
+            </div>
+
+            <div class = expect>
+                <h3>The expectation</h3>
+                <p>Describe youe expectation for today's class</p>
+                <p>You can list it like this:</p>
+                <ol>
+                    <li>get more knowledge about CSS.</li>
+                    <li>do CSS in the right way.</li>
+                    <li>turn in work in time. :D</li>
+                </ol>
+                
+            </div>
+        </section>    
+        
+        <section class = "sec">
+            <div class = progressbar>
+                <label for="progress">Progress of today's class </label>
+                <progress id="progress" value="40" max="100"></progress>
+                
+            </div>
+            
+            <div class = "quote">
+                <p>I have not failed. I've just found <br>10,000 ways that won't work.</p>
+            </div>
+            
+            <div class = "register">
+                <p>register for lucky draw</p>
+                <form>
+                    <fieldset>
+                        <label for = "name">Name:*</label>
+                        <input type="text" id="name" placeholder="Karin Onwong" required><br>
+                        <label for = "email">eamil:*</label>
+                        <input type="email" id="email" placeholder="60010018@kmitl.ac.th" required><br>
+                        <label for="tel">Tel:*</label>
+                        <input id="tel" type="tel" placeholder="084-5968343" pattern="[0-9]{3}-[0-9]{7}" required><br>
+                        <input type="submit" value="submit">
+                    </fieldset>
+                </form>
+            </div>
+
+            
+        </section>
+
+
+        <footer>
+            <p>Karin Onwong 60010018 ce.kmitl right reserved & copyright 2020</p>
+        </footer>
+    </div>
+
+</body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .btn {
+                background-color:var(--bgcolor,gold);
+                transition: background-color 0s ease 0s; 
+                /* transition : property เวลาที่ใช้ในการเปลี่ยนแปลง อิหยังไม่รู้ เวลาที่ต้องไปinteractกับpropertyนั้น */
+            }
+            .magenta {
+                --bgcolor:magenta;
+            }
+            .btn:hover{ 
+                --bgcolor:plum;
+            }
+
+            .menu{
+                width:100%;
+                float:right;
+                list-style-type: none;
+                background-color:gold;
+            }
+            li{
+                float: left;
+                margin: 10px;
+            }
+            li a:hover {
+                cursor:pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input type="button" class="btn" value="Oh wow cool"></input>
+        <input type="button" class="btn magenta" value="Oh wow cool"></input>
+
+        <ul class = "menu">
+            <li><a href="./aftn.html">item1</a></li>
+            <li><a href="">item2</a></li>
+        </ul>
+
+        <ul class = "menu2">
+            <li><a href="./aftn.html">item1</a></li>
+            <li><a href="">item2</a></li>
+        </ul>
+    </body>
+</html>
+
